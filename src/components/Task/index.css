@@ -17,6 +17,7 @@
   margin-inline: 8px;
   position: relative;
   right: 9px;
+  color: black;
 }
 
 .task--button:hover {

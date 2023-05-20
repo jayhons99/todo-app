@@ -28,6 +28,7 @@
   padding-block: 5px;
   font-family: "Inter", sans-serif;
   background-color: #f4d58d;
+  color: black;
 }
 
 .form--form button:hover {
