@@ -2,6 +2,12 @@
   text-decoration: line-through;
 }
 
+.inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .task--taskName {
   font-family: "Inter", sans-serif;
   font-weight: 600;
