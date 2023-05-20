@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #f5ebe0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
