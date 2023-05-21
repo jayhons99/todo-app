@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Form from "./components/Form/Form";
 import Header from "./components/Header/Header";
 import Task from "./components/Task/Task";
@@ -8,7 +8,14 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   // responsible for holding all of the tasks entered so far
-  const [taskList, setTaskList] = useState([]);
+  const [taskList, setTaskList] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
+
+  // saves tasks even after refresh
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(taskList));
+  }, [taskList]);
 
   // represents a task object that we push to taskList
   const [task, setTask] = useState({
