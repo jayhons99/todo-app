@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   // responsible for holding all of the tasks entered so far
   const [taskList, setTaskList] = useState(
-    JSON.parse(localStorage.getItem("tasks")) || []
+    () => JSON.parse(localStorage.getItem("tasks")) || []
   );
 
   // saves tasks even after refresh
