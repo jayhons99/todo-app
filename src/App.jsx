@@ -83,11 +83,6 @@ function App() {
         ];
       });
     }
-
-    // clears the input field
-    setTask(() => ({
-      taskName: "",
-    }));
   }
 
   return (

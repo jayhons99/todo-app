@@ -1,6 +1,7 @@
+/* eslint-disable react/display-name */
 import "./index.css";
 
-const Form = ({ handleChange, value, handleSubmit }) => {
+const Form = ({ handleChange, value, handleSubmit }, ref) => {
   return (
     <div className="form">
       <form className="form--form" onSubmit={handleSubmit}>
@@ -11,6 +12,7 @@ const Form = ({ handleChange, value, handleSubmit }) => {
             className="form--input"
             value={value}
             onChange={handleChange}
+            ref={ref}
           />
         </label>
         <button>Add Task</button>
